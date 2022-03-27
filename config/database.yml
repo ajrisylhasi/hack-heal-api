@@ -24,4 +24,4 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: hack_heal
+  database: purpose-hacknheal

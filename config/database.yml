@@ -24,4 +24,4 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: student_locations_production
+  database: hack_heal

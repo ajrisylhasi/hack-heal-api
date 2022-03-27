@@ -7,5 +7,9 @@ Rails.application.routes.draw do
     patch "me/" => "users#update"
     put "me/" => "users#update"
     delete "me/" => "users#destroy"
+    
+    resources :submissions, only: [:create, :show]
+    resources :choices, only: [:create]
+    resources :questionnaires, only: [:index, :show]
   end
 end
